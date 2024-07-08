@@ -1,0 +1,16 @@
+name: 'Assert branch naming convention'
+
+on:
+  pull_request:
+
+jobs:
+  branch-naming-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: deepakputhraya/action-branch-name@master
+        with:
+          regex: '([a-z])+\/([a-z])+'
+          allowed_prefixes: TMU
+          ignore: main,development,staging,production
+          min_length: 5
+          max_length: 20

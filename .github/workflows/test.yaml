@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: This is a failure test
-        false
+        run: false

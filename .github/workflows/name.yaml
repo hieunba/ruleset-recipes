@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: deepakputhraya/action-branch-name@master
         with:
-          regex: '([a-z])+\/([a-z])+'
+          regex: 'TMU-[0-9]+-.*'
           allowed_prefixes: TMU
           ignore: main,development,staging,production
           min_length: 5

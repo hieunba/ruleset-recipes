@@ -1,0 +1,12 @@
+name: Test
+
+on:
+  pull_request:
+
+jobs:
+  fail-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: This is a failure test
+        false

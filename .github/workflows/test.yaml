@@ -5,6 +5,7 @@ on:
 
 jobs:
   fail-test:
+    name: a fail test
     runs-on: ubuntu-latest
 
     steps:
